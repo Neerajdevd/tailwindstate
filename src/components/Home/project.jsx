@@ -28,19 +28,20 @@ const Project = () => {
    
   
   return (
-    <div className="w-full " style={{backgroundColor:`${tocolor}`}}>
+    <div className="w-[100%] h-96" style={{backgroundColor:`${tocolor}`}}>
 
     <div className="flex  gap-3 justify-center items-center w-full h-1/2 bg-inherit "  >
        <div className="">
 
-    <button className="bg-red-500" onClick={chnagered}>
-            Red
+    <button className="bg-red-500" >
+            
         </button>
+        <button type="button" onClick={chnagered} className="text-white bg-red-700 hover:bg-red-800  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 ">Red</button>
 
-        <button className="bg-green-500 text-white p-2" onClick={chnageGreen}>
+        <button className="text-white bg-green-700 hover:bg-green-800  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600  " onClick={chnageGreen}>
             Green
         </button>
-        <button className="bg-blue-500 text-white p-2"  onClick={changeBlue}>
+        <button  className="text-white bg-blue-700 hover:bg-blue-800  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600  " onClick={changeBlue}>
             Blue
         </button>
        </div>
